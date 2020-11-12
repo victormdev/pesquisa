@@ -109,7 +109,6 @@
                             <input type="text" class="form-control" id="subject" placeholder="Digite a cidade aqui" required="required">
                           </div>
                     </div>
-                    
                     <div class="col-md-4">
                     </div>
                   </div>
@@ -124,14 +123,14 @@
                             }
                             ?>
                           <div class="card-header">
-                            <h4 class="card-title"> <?=$pesquisa['cidade']?></h4>
+                            <h4 class="card-title"> Salvador</h4>
                             <h5 style="font-size: 16px;"><?=$pesquisa['descricao']?></h5>
                           </div>
                           <div class="card-body">
                             <div class="table-responsive">
                             <table class="row">
                 <tr>
-                    <td class="col">População: <?=$pesquisa['populacao']?> habitantes</td>
+                    <td class="col">População: <?=$pesquisa['populacao']?></td>
                 </tr>
                     <td class="col">Eleitores: <?=$pesquisa['eleitores']?></td>
                 <tr>
@@ -157,9 +156,7 @@
                     <div class="col-md-4">
                     </div>
                     <div class="col-md-4">
-                      
-                    <a target="_blank" href="./contato.html">
-                      <button class="btn btn-primary btn-block" onclick="SendMail()" value="SEND"><b>Saiba mais</b></button></a>
+                      <button class="btn btn-primary btn-block" onclick="SendMail()" value="SEND"><b>Saiba mais</b></button>
                     </div>
                     <div class="col-md-4">
                     </div>
@@ -168,6 +165,108 @@
                       </div>
                       <div class="col-md-2">
                     </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <form id="pesquisa" method = "POST">
+                      <input type="hidden" id="comando" name="comando" value="salvar">
+                      <input type="hidden" id="codigo" name="codigo" value="">
+                        <div class="row">
+                          <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                              <label>Descrição</label>
+                              <input type="text" class="form-control" id="descricao" name="descricao" placeholder="Digite o a descrição da pesquisa" required="required">
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                              <label>Cidade</label>
+                              <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite o seu e-mail" required="required">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                              <label>População</label>
+                              <input type="text" class="form-control" id="populacao" name="populacao" placeholder="Digite o assunto da mensagem" required="required">
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                              <label>Eleitores</label>
+                              <input type="text" class="form-control" id="eleitores" name="eleitores" placeholder="Digite a mensagem" required="required">
+                            </div>
+                          </div>
+                          <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                              <label>Data Incial</label>
+                              <input type="date" class="form-control" id="periodo" name="periodo" placeholder="Digite a mensagem" required="required">
+                            </div>
+                          </div>
+                          <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                              <label>Data Final</label>
+                              <input type="date" class="form-control" id="periodo_final" name="periodo_final" placeholder="Digite a mensagem" required="required">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                              <label>Nivel de Confiança</label>
+                              <input type="text" class="form-control" id="nivelConfianca" name="nivelConfianca" placeholder="Digite o assunto da mensagem" required="required">
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                              <label>Margem de erro</label>
+                              <input type="text" class="form-control" id="margemErro" name="margemErro" placeholder="Digite a mensagem" required="required">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                              <label>Total de participantes</label>
+                              <input type="text" class="form-control" id="totalParticipante" name="totalParticipante" placeholder="Digite o assunto da mensagem" required="required">
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                              <label>Introdução</label>
+                              <input type="text" class="form-control" id="introducao" name="introducao" placeholder="Digite a mensagem" required="required">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-10 pr-1">
+                            <div class="form-group">
+                              <label>Perguntas</label>
+                              <input type="text" class="form-control" id="perguntas" name="perguntas" placeholder="Digite a mensagem" required="required">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">
+                          </div>
+                          <div class="col-md-4">
+                            <button class="btn btn-primary btn-block" id="salvar" type = "submit" name="salvar">Cadastrar pesquisa
+                            </button>
+                          </div>
+                          <div class="col-md-4">
+                          </div>
+                        </div>
+                      </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
