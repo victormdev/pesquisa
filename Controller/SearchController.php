@@ -66,12 +66,8 @@
             }else{
                 echo "<script>alert('erro')</script>";
             }
-        }
-        
-        public function find (){     
-            $clienteDAO = new ClienteDAO();
-            return $clienteDAO->obter();
-        }   
+        }        
+
 
 
     }
