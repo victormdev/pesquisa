@@ -1,0 +1,23 @@
+create database tb001;
+use tb001;
+create table search(
+	id int auto_increment primary key not null,
+	descricao varchar(255),
+    cidade varchar(100),
+    populacao int,
+    eleitores int,
+    periodo datetime,
+    nivel_confianca DECIMAL(10,2),
+    margem_erro DECIMAL(10,2),
+    total_participante int,
+    introducao varchar(255),
+	perguntas int        
+);
+
+create table usuario(
+	id int auto_increment primary key not null,
+	login varchar(100) not null,
+    senha varchar(255)not null
+);
+//Validação de usuário
+INSERT INTO usuario ( login, senha) VALUES("adm", "adm123");
