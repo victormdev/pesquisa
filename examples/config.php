@@ -1,6 +1,6 @@
 <?php
 
 //SITE GLOBAL CONFIGURATION
-$email = "maurodourado@maxxmobi.com.br";   //<-- Your email
+$email = "vmadevops@gmail.com";   //<-- Your email
 
 ?>

@@ -1,6 +1,6 @@
 <?php
     require_once 'Controller.php';
-    require '../Model/ClienteDAO.php';
+    require '../Model/SearchDAO.php';
     class SearchController extends Controller{
 
 
